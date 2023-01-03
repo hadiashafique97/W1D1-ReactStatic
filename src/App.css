@@ -1,38 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main {
+
+  display: flex;
+  /* background-color: brown; */
+  height: 80vh;
+  gap: 30px;
+  padding: 30px;
+  overflow: hidden;
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container1 {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  height: 100%;
+  gap: 30px;
+}
+
+.container2 {
+  display: flex;
+  flex: 2;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+
+.reviews {
+  width: 100%;
+  background-color: rgb(88, 158, 186);
+}
+
+.average-rating {
+  width: 100%;
+  background-color: rgb(244, 217, 110);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: rgb(0, 128, 92);
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.sentimental-analysis {
+
+  width: 100%;
+  background-color: rgb(229, 180, 119);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.website-visitors {
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+  background-color: lavender;
+  padding: 20px;
+}
+
+.visitor-info {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  /* background-color: darkslategrey; */
+
+}
+
+.empty-container {
+  flex: 3;
+  background-color: darksalmon;
+  width: 100%;
+  height: 100%;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2rem;
+  flex: 3;
+}
+
+.sentimental-analysis h1 {
+  flex: 1;
+
 }
